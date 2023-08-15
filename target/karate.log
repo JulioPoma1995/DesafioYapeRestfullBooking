@@ -1,0 +1,6 @@
+14:52:52.866 [main]  INFO  com.intuit.karate - Karate version: 1.4.0-SNAPSHOT
+14:52:53.828 [main]  ERROR com.intuit.karate - src/test/resources/features/APITest.feature:5
+Given I send a GET request to the endpoint
+no step-definition method match found for: I send a GET request to the endpoint
+src/test/resources/features/APITest.feature:5
+14:52:54.194 [main]  INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/resources/features/APITest.feature

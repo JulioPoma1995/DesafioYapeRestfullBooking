@@ -1,0 +1,87 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-08-15T00:44:39.493Z",
+        "line": 4,
+        "name": "Happy - Validation of getting bookingId.",
+        "description": "",
+        "id": "validación-de-api-restfull-booking;happy---validation-of-getting-bookingid.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 336964700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I declare the base URI https://restful-booker.herokuapp.com",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://restful-booker.herokuapp.com",
+                  "offset": 23
+                }
+              ],
+              "location": "Steps.APISteps.GivenBaseUri(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1037496000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I send a GET request on the /booking endpoint and validate a 200 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/booking",
+                  "offset": 28
+                },
+                {
+                  "val": "200",
+                  "offset": 61
+                }
+              ],
+              "location": "Steps.APISteps.expectedStatusCode(java.lang.String,int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 341856500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I validate that the API show more than 1 record",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 39
+                }
+              ],
+              "location": "Steps.APISteps.ValidateRecods(int)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@API"
+          }
+        ]
+      }
+    ],
+    "name": "Validación de API Restfull Booking",
+    "description": "",
+    "id": "validación-de-api-restfull-booking",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/APITest.feature",
+    "tags": []
+  }
+]
